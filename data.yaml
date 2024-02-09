@@ -1,0 +1,11 @@
+# Пути до выборок
+train: train
+val: val
+test: test
+
+# Количество классов
+nc: 4
+
+# Имена классов
+names: ['simple n', 'militarry n', 'goverment n', 'police n']
+

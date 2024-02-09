@@ -1,0 +1,29 @@
+# 15/15 iterations complete ✅ (77305.68s)
+# Results saved to runs\detect\tune
+# Best fitness=0.8108 observed at iteration 13
+# Best fitness metrics are {'metrics/precision(B)': 0.99463, 'metrics/recall(B)': 0.99022, 'metrics/mAP50(B)': 0.99495, 'metrics/mAP50-95(B)': 0.79033, 'val/box_loss': 0.8317, 'val/cls_loss': 0.40003, 'val/dfl_loss': 0.94402, 'fitness': 0.8108}
+# Best fitness model is runs\detect\yolo13
+# Best fitness hyperparameters are printed below.
+
+lr0: 0.01075
+lrf: 0.01139
+momentum: 0.91922
+weight_decay: 0.00047
+warmup_epochs: 3.03763
+warmup_momentum: 0.81395
+box: 7.51652
+cls: 0.41462
+dfl: 1.40429
+hsv_h: 0.01374
+hsv_s: 0.7
+hsv_v: 0.38342
+degrees: 0.0
+translate: 0.10074
+scale: 0.55711
+shear: 0.0
+perspective: 0.0
+flipud: 0.0
+fliplr: 0.50589
+mosaic: 1.0
+mixup: 0.0
+copy_paste: 0.0
