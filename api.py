@@ -8,7 +8,7 @@ from ultralytics import YOLO
 # Передаем путь до tesseract.exe к нашему pytesseract
 pytesseract.pytesseract.tesseract_cmd = r'c:\Program Files\Tesseract-OCR\tesseract.exe'
 # Загружаем лучшие веса, которые были получены при обучение в переменную model
-model = YOLO(r'Модуль Б\runs\detect\tune\weights\best.pt')
+model = YOLO(r'runs\detect\tune\weights\best.pt')
 
 # Создаем функцию для детекции номера и определение текста на номере
 def detect_car_number(image_path):

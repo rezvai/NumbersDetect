@@ -45,10 +45,15 @@ class GetImage(QMainWindow):
         pixmap = QPixmap(image_path)
         # Отображаем выбранное фото на экране
         self.picture.setPixmap(pixmap)
-        # Сохраняем в переменную работу нашего API, которое возвращает текст номера
-        result_text = send_car_number(image_path)
-        # Отображаем на экране текст из нашего API
-        self.label.setText(result_text)
+        # Проверяем условие, что путь до картинки существует
+        if len(image_path) < 1:
+            # Если пути нет, то выводим, что картинка не выбрана
+            self.label.setText("Изображение не выбрано.")
+        else:
+            # Сохраняем в переменную работу нашего API, которое возвращает текст номера
+            result_text = send_car_number(image_path)
+            # Отображаем на экране текст из нашего API
+            self.label.setText(result_text)
 
 # Создаем наше приложение, а после запускаем его
 app = QApplication(sys.argv)
