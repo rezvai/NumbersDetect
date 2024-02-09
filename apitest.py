@@ -8,7 +8,7 @@ class TestCarNumberDetection(unittest.TestCase):
     # Создаем функцию для тестирования функции detect_car_number
     def test_detect_car_number(self):
         # Сохраняем в переменную путь проверяемого изображения
-        image_path = r'C:\Users\Ulia\Desktop\it\NumbersProject\Модуль Б\dataset\images\test\1_11_2014_12_30_25_981.bmp'  
+        image_path = r'путь до картинки'  
         # Сохраняем в переменную результат работы функции
         result = detect_car_number(image_path)
         # Проверяем результат полученный и ожидаемый
@@ -17,7 +17,7 @@ class TestCarNumberDetection(unittest.TestCase):
     # Создаем функцию для тестирования функции detect_car_number
     def test_send_car_number(self):
         # Сохраняем в переменную путь проверяемого изображения
-        image_path = r'C:\Users\Ulia\Desktop\it\NumbersProject\Модуль Б\dataset\images\test\1_11_2014_12_30_25_981.bmp' 
+        image_path = r'путь до картинки' 
         # Сохраняем в переменную результат работы функции
         result = send_car_number(image_path)
         # Проверяем результат полученный и ожидаемый

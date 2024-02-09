@@ -38,7 +38,7 @@ class GetImage(QMainWindow):
     # Создаем функцию, которая будет отправлять фото в наше API
     def clicked_to_use_API(self):
         # Добавляем виджет, чтобы наша кнопка могла работать как добавление файлов
-        result = QFileDialog.getOpenFileName(self, 'Выберите файл', '/Users/Server/Desktop/NumbersProject', 'BMP File(*.bmp)')
+        result = QFileDialog.getOpenFileName(self, 'Выберите файл', 'путь открывающейся папки', 'тип файла, пример: PNG file(*.png))')
         # Сохраняем в переменную путь до переданного файла
         image_path = result[0]
         # Сохраняем в переменную PixMap
